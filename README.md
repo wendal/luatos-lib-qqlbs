@@ -18,6 +18,13 @@
 2. 支持基站定位
 3. TODO 支持蓝牙定位, 但感觉没啥用?
 
+提醒:
+
+* 腾讯的定位服务需要收费, 具体请咨询腾讯. 2024.1.3咨询的答复的免费额度是10000次/天,并发5次/秒.
+* 腾讯的定位服务需要一个key, 登陆 lbs.qq.com 注册,并个人认证后可用, 企业认证的额度一样
+* 返回结果的坐标系是GCJ02, 获取key之后, 要分配额度, 否则是20次/天, 并发5次/秒
+* [腾讯的API文档](https://lbs.qq.com/service/webService/webServiceGuide/location)
+
 ## 变更日志
 
 [changelog](changelog.md)
