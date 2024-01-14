@@ -77,7 +77,7 @@ function qqlbs.req(qqkey, cells, wifis, bles)
     -- log.info("请求的内容", rbody)
     -- sys.taskInit(function()
         -- log.info("执行查询")
-        local code, headers, body = http.request("POST", "https://apis.map.qq.com/ws/location/v1/network", rheaders, (json.encode(query))).wait()
+        local code, headers, body = http.request("POST", "http://apis.map.qq.com/ws/location/v1/network", rheaders, (json.encode(query))).wait()
         if code == 200 and body and #body > 10 then
             -- log.info("wifiloc", "查询成功", body)
             local tmp = json.decode(body)
