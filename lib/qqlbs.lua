@@ -84,10 +84,8 @@ function qqlbs.req(qqkey, cells, wifis, bles)
             if tmp and tmp.status and 0 == tmp.status then
                 return tmp.result
             end
-        else
-            log.info("qqlbs", "查询失败", code, body)
-            return
         end
+        log.info("qqlbs", "查询失败", code, body)
     -- end)
 end
 
